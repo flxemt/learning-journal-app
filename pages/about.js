@@ -1,10 +1,12 @@
 import view from '../utils/view';
 
+import avatar from '../assets/images/avatar.jpg';
+
 function About() {
   view.innerHTML = `
   <main class="container">
     <section class="about-header">
-        <img src="/assets/images/avatar.jpg" style="border-radius: 50%" alt="David's avatar">
+        <img src="${avatar}" style="border-radius: 50%" alt="David's avatar">
         <div>
             <h1>Hi there! My name is David and welcome to my learning journal.</h1>
             <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
