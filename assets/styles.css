@@ -43,8 +43,12 @@ img {
   align-items: center;
 }
 
+.nav-logo-img {
+  width: 24px;
+}
+
 .nav-logo-brand {
-  margin-left: 0.18em;
+  margin-left: 0.375em;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
@@ -196,6 +200,10 @@ h1 {
 
 /* Media queries */
 @media (min-width: 768px) {
+  .nav-logo-img {
+    width: 34px;
+  }
+
   .nav-logo-brand {
     font-size: 1.25rem;
   }
