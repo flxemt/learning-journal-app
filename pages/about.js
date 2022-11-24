@@ -1,6 +1,9 @@
 import view from '../utils/view';
 
 import avatar from '../assets/images/avatar.jpg';
+import image1 from '../assets/images/article-image-03.png';
+import image2 from '../assets/images/article-image-02.png';
+import image3 from '../assets/images/blog-image-05.png';
 
 function About() {
   view.innerHTML = `
@@ -23,19 +26,19 @@ function About() {
     <section class="posts">
         <h3 class="section-title">Recent posts</h3>
         <article class="post">
-            <img class="post-img" src="assets/images/article-image-03.png" alt="Laptop">
+            <img class="post-img" src="${image1}" alt="post image">
             <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
             <h2 class="post-title">Blog one</h2>
             <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
         </article>
         <article class="post">
-            <img class="post-img" src="assets/images/article-image-02.png" alt="Laptop ">
+            <img class="post-img" src="${image2}" alt="post image ">
             <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
             <h2 class="post-title">Blog two</h2>
             <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
         </article>
         <article class="post">
-            <img class="post-img" src="assets/images/blog-image-05.png" alt="Laptop">
+            <img class="post-img" src="${image3}" alt="post image">
             <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
             <h2 class="post-title">Blog three</h2>
             <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>

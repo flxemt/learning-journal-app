@@ -1,5 +1,10 @@
 import view from '../utils/view';
 
+import articleImage from '../assets/images/article-image.png';
+import image1 from '../assets/images/article-image-03.png';
+import image2 from '../assets/images/article-image-02.png';
+import image3 from '../assets/images/blog-image-05.png';
+
 function Post() {
   view.innerHTML = `
     <main class="container">
@@ -8,7 +13,7 @@ function Post() {
             <h1>My new journey as a bootcamp student.</h1>
             <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
         </section>
-        <img class="image-post-main" src="assets/images/article-image.png" alt="Laptop">
+        <img class="image-post-main" src=${articleImage} alt="article image">
         <section class="post-container">
             <h4>How I stay committed to learning</h4>
             <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
@@ -19,24 +24,24 @@ function Post() {
         </section>
         <section class="posts">
             <h3 class="section-title">Recent posts</h3>
-            <article class="post">
-                <img class="post-img" src="assets/images/article-image-03.png" alt="Laptop">
-                <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
-                <h2 class="post-title">Blog one</h2>
-                <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-            </article>
-            <article class="post">
-                <img class="post-img" src="assets/images/article-image-02.png" alt="Laptop ">
-                <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
-                <h2 class="post-title">Blog two</h2>
-                <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-            </article>
-            <article class="post">
-                <img class="post-img" src="assets/images/blog-image-05.png" alt="Laptop">
-                <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
-                <h2 class="post-title">Blog three</h2>
-                <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-            </article>
+        <article class="post">
+            <img class="post-img" src="${image1}" alt="post image">
+            <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
+            <h2 class="post-title">Blog one</h2>
+            <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+        </article>
+        <article class="post">
+            <img class="post-img" src="${image2}" alt="post image ">
+            <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
+            <h2 class="post-title">Blog two</h2>
+            <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+        </article>
+        <article class="post">
+            <img class="post-img" src="${image3}" alt="post image">
+            <time class="post-date" datetime="2022-07-23">July 23, 2022</time>
+            <h2 class="post-title">Blog three</h2>
+            <p class="post-content">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+        </article>
         </section>
     </main>
   `;
